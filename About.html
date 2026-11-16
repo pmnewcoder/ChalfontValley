@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +55,7 @@
         }
 
         main {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 35px auto;
             padding: 0 20px;
         }
@@ -86,6 +87,58 @@
             font-weight: bold;
         }
 
+        .team-intro {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .team-card {
+            text-align: center;
+            background: #f7f9f8;
+            border: 1px solid #e1e8e7;
+            border-radius: 12px;
+            padding: 22px 18px;
+        }
+
+        .photo-placeholder {
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #e4eeee;
+            border: 3px solid #b17b35;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #174b59;
+            font-size: 0.85em;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .team-card h3 {
+            color: #174b59;
+            margin: 8px 0 2px;
+        }
+
+        .team-role {
+            color: #b17b35;
+            font-weight: bold;
+            margin: 0 0 12px;
+        }
+
+        .team-card p {
+            margin-top: 8px;
+            font-size: 0.95em;
+        }
+
         footer {
             background-color: #174b59;
             color: white;
@@ -98,7 +151,13 @@
             margin: 5px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 750px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
             header h1 {
                 font-size: 2em;
             }
@@ -111,6 +170,10 @@
             section {
                 padding: 22px;
             }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -122,7 +185,6 @@
         <p>Working together to make a difference</p>
     </header>
 
-    <!-- NAVIGATION SECTION -->
     <nav>
         <a href="Index.html">Home</a>
         <a href="About.html">About Us</a>
@@ -159,6 +221,109 @@
         </section>
 
         <section>
+            <h2>Meet the Team</h2>
+            <p class="team-intro">
+                Our PTA is made up of friendly parents, carers and volunteers
+                who give their time to make a difference. Get to know the
+                people helping to bring our school community together.
+            </p>
+
+            <div class="team-grid">
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">Chairperson</p>
+                    <p>
+                        A short introduction about our Chairperson
+                        and the role they play in the PTA.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">Vice Chair</p>
+                    <p>
+                        A short introduction about our Vice Chair
+                        and how they help support the PTA.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">Treasurer</p>
+                    <p>
+                        A short introduction about our Treasurer
+                        and how they look after PTA finances.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">PTA Member</p>
+                    <p>
+                        A little about this member and how they
+                        help make our events happen.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">PTA Member</p>
+                    <p>
+                        A little about this member and how they
+                        support our school community.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">PTA Member</p>
+                    <p>
+                        A little about this member and what they
+                        enjoy about being part of the PTA.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">PTA Member</p>
+                    <p>
+                        A little about this member and how they
+                        help bring families together.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">PTA Member</p>
+                    <p>
+                        A little about this member and their
+                        contribution to the PTA.
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <div class="photo-placeholder">Photo to come</div>
+                    <h3>Name to come</h3>
+                    <p class="team-role">PTA Member</p>
+                    <p>
+                        A little about this member and how they
+                        help make Chalfont Valley special.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
             <h2>Everyone Can Get Involved</h2>
             <p>
                 You don't need lots of spare time to make a difference.
@@ -177,44 +342,6 @@
         <p><strong>Chalfont Valley PTA</strong></p>
         <p>Working together for our children and our community.</p>
     </footer>
-
-</body>
-</html>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="fun-calendar.html">Fun Calendar</a>
-</nav>
-    
-    <h1>About Chalfont Valley PTA</h1>
-
-    <p>Welcome to the Chalfont Valley PTA website!</p>
-
-    <p>
-        We are a group of parents and volunteers
-        working together to support our school
-        and bring our community closer together.
-    </p>
-
-    <p>
-        Through fundraising, school events and
-        community activities, we aim to make
-        a positive difference for all our children.
-    </p>
-
-    <h2>What We Do</h2>
-
-    <ul>
-        <li>Organise fun school events</li>
-        <li>Raise funds for school resources</li>
-        <li>Bring parents and families together</li>
-        <li>Support our school community</li>
-    </ul>
-
-    <p>
-        <a href="index.html">Back to Home</a>
-    </p>
 
 </body>
 </html>
